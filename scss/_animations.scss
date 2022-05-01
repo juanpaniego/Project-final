@@ -1,0 +1,57 @@
+
+.image-gif-contact{
+    animation-name: image-animate-contact;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    height:250px;
+    width:100%;
+    padding: 50px;
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+ 
+}
+
+@keyframes image-animate-contact{
+    from{background-image: url("https://m.media-amazon.com/images/M/MV5BMTQ2MzAyNDY5MV5BMl5BanBnXkFtZTgwODY0NDIyMjE@._V1_FMjpg_UX320_.jpg 320w, https://m.media-amazon.com/images/M/MV5BMTQ2MzAyNDY5MV5BMl5BanBnXkFtZTgwODY0NDIyMjE@._V1_FMjpg_UX480_.jpg 480w, https://m.media-amazon.com/images/M/MV5BMTQ2MzAyNDY5MV5BMl5BanBnXkFtZTgwODY0NDIyMjE@._V1_FMjpg_UX500_.jpg 500w, https://m.media-amazon.com/images/M/MV5BMTQ2MzAyNDY5MV5BMl5BanBnXkFtZTgwODY0NDIyMjE@._V1_.jpg 500w");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 300px;
+        box-sizing:border-box;
+        
+        grid-area: cover-site;}
+
+    
+    to{background-image: url("https://s.hdnux.com/photos/72/71/24/15439156/3/1200x0.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 300px;
+	box-sizing:border-box;
+    
+	grid-area: cover-site;
+    }
+}
+
+.image-gif-joinus{
+    @extend .image-gif-contact;
+    animation-name: image-animate-joinus;
+    
+}
+
+@keyframes image-animate-joinus{
+    from{background-image: url("https://i.pinimg.com/originals/27/68/3f/27683f882df177638517deea7ab258f9.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 300px;
+        box-sizing:border-box;
+        grid-area: cover-site;}
+
+    
+    to{background-image: url("https://www.schnittberichte.com/pics/SBs/200/961493/sl12.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 300px;
+	box-sizing:border-box;
+	grid-area: cover-site;
+    }
+}

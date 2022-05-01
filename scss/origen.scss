@@ -1,0 +1,49 @@
+
+$color-site:royalblue;
+
+@mixin sizes($width,$height) {
+    height:$height;
+    width:$width;
+}
+
+$style-font:(
+    color:$color-site,
+    size:120px,
+    decoration:none,
+);
+
+@import "structure";
+@import "animations";
+@import "base";
+
+.logo{
+    font-size: map-get($style-font,size);
+    color: map-get($style-font,color);
+    text-decoration: map-get($style-font,decoration);
+}
+
+h1 a:hover{
+    color: lightblue;
+   text-decoration-line:map-get($style-font,decoration);
+   font-size: map-get($style-font,size) +2;
+}
+
+.text-link{
+    font-size: 30px;
+    color:black;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: lightblue;
+   text-decoration-line:map-get($style-font,decoration);
+}
+
+/* media queries -----------------------------------------------------------------------------------------------------------*/
+
+@media (min-width: 576px){
+    .side-menu{
+        text-align: left;
+    }
+}
+
